@@ -1,15 +1,65 @@
+html{
+  height: 100%;
+}
 body {
+  height: 100%;
   font-family: Helvetica;
 }
+.page{
+   padding-bottom: 40px;
+  &__header{
 
-.content {
-  margin: 100px;
+  }
 
-  &--centered {
+  &__footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    height: 60px;
+    background-color: #111;
     text-align: center;
-  }
 
-  &__description {
-    color: #999;
+    &__icon {
+      color: rgb(139, 146, 158);
+    }
   }
+}
+.container {
+ border:1px solid black;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  min-height:100%;
+  &__content {
+
+    &__header{
+      text-align: center;
+
+    }
+  }
+}
+
+.carousel__item {
+  margin-left: auto;
+  margin-right: auto;
+  cursor:pointer;
+}
+.carousel__modal{
+  display: none;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+ /* bottom:-999999px;*/
+  z-index: 999;
+  background: rgba(54, 25, 25, .5);
+
+  &__img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+
 }

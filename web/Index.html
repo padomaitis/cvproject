@@ -5,40 +5,119 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Title</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
-
+    <div class="carousel__modal">
+        <img class="carousel__modal__img" src="assets/img2.jpg"  >
+    </div>
         <section class="page">
             <header class ="page__header">
                 <div class="page__header__logo logo">
                     <img src="" class="page__header__logo__img" alt="">
                 </div>
                 <nav class="page__header_navbar navbar navbar-inverse">
-                    <ul class="page__header_navbar__nav nav nav-pills">
-                        <li><a href="page__header_navbar__nav__item">Home</a></li>
-                        <li><a href="page__header_navbar__nav__item">Gallery</a></li>
-                        <li><a href="page__header_navbar__nav__item">Contact</a></li>
-                    </ul>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#headNav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="headNav">
+                        <ul  class="page__header_navbar__nav nav navbar-nav navbar-right">
+                            <li class=page__header_navbar__nav__item"><a href=""><i class="fa fa-home" aria-hidden="true">Home</i></a></li>
+                            <li class=page__header_navbar__nav__item"><a href=""><i class="fa fa-picture-o" aria-hidden="true">Portfolio</i></a></li>
+                            <li class=page__header_navbar__nav__item"><a href=""><i class="fa fa-address-card-o" aria-hidden="true">Contact</i></a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
-            <section class="page__content content--centered">
-                <h1 clas="page__content__header">Welcome to Pavelas CV WEBSITE!!!</h1>
-                <aside>
+            <section class="container">
+                <main class="container__content row">
+                    <h1 class="container__content__header">Welcome to Pavelas CV WEBSITE!!!</h1>
+                    <article class="content__table col-sm-12 col-md-6 col-lg-6">
+                        <h2 class="content__table__heading">Skills Table</h2>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Skills</th>
+                                <th>Bad</th>
+                                <th>Good</th>
+                                <th>Ninja</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Javascript</td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>JQuery</td>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>PHP</td>
+                                <td></td>
+                                <td><i class="fa fa-check-square" aria-hidden="true"></i></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article class="container__carousel col-sm-12 col-md-6 col-lg-6">
+                        <h2 class="container__carousel__heading">Portfolio</h2>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img class="carousel__item" src="assets/img.jpg" alt="">
+                                </div>
 
-                </aside>
-                <main>
-                    <section>
+                                <div class="item">
+                                    <img class="carousel__item" src="assets/img2.jpg" alt="">
+                                </div>
 
-                    </section>
+                                <div class="item">
+                                    <img class="carousel__item" src="assets/img3.jpg" alt="">
+                                </div>
+
+                                <div class="item">
+                                    <img class="carousel__item" src="assets/img4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </main>
             </section>
-            <footer class="page__footer">
-
+            <footer class="page__footer footer">
+                <a href='#'><i class="page__footer__icon fa fa-facebook fa-3x fa-fw"></i></a>
+                <a href='#'><i class="page__footer__icon fa fa-twitter fa-3x fa-fw"></i></a>
+                <a href='#'><i class="page__footer__icon fa fa-youtube-play fa-3x fa-fw"></i></a>
             </footer>
         </section>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/assets/main.js"></script>
+        <script type="text/javascript" src="assets/main.js"></script>
     </body>
 </html>
